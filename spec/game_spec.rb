@@ -20,7 +20,6 @@ RSpec.describe Game do
       game_object.place_ship(ship_1)
       expect(game_object.placed_ships).to eq [[2,2],[2,3],[2,4]]
     end
-
     
     it "can place multiple ships" do
       game_object = Game.new
@@ -41,7 +40,7 @@ RSpec.describe Game do
       expect(game_object.placed_ships).to eq [[2,2], [2,3], [2,4], [3,2], [3,3], [3,4]]
     end
   end
-  
+
   context "cant place ships" do
     it "won't place a ship if space already occupied ship" do
       game_object = Game.new

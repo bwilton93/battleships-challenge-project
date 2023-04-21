@@ -49,26 +49,3 @@ class Game
     return placed_ships.include? [x, y]
   end
 end
-
-# game_object = Game.new
-
-# game_object.place_ship(
-#   length: 2,
-#   orientation: {"v" => :vertical, "h" => :horizontal}.fetch("h"),
-#   row: 2.to_i,
-#   col: 2.to_i
-# )
-# game_object.place_ship(
-#   length: 2,
-#   orientation: {"v" => :vertical, "h" => :horizontal}.fetch("v"),
-#   row: 2.to_i,
-#   col: 2.to_i
-# )
-# game_object.place_ship(
-#   length: 3,
-#   orientation: {"v" => :vertical, "h" => :horizontal}.fetch("h"),
-#   row: 3,
-#   col: 3
-# )
-
-# p game_object.placed_ships
