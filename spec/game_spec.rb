@@ -6,6 +6,10 @@ RSpec.describe Game do
       game_object = Game.new
       expect(game_object.placed_ships).to eq []
     end
+
+    it "with a full list of unplaced ships" do
+      
+    end
   end
 
   context "can place ships" do
@@ -20,7 +24,7 @@ RSpec.describe Game do
       game_object.place_ship(ship_1)
       expect(game_object.placed_ships).to eq [[2,2],[2,3],[2,4]]
     end
-    
+
     it "can place multiple ships" do
       game_object = Game.new
       ship_1 = {
