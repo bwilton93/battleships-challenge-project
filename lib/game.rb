@@ -32,12 +32,12 @@ class Game
       end
     end
     
-    if check_for_existing(@ship_position)
+    if can_place(@ship_position)
       @placed_ships << @ship_position
     end
   end
 
-  def check_for_existing(ship)
+  def can_place(ship)
     ship.each do |coordinate|
       for i in 0...@placed_ships.length 
         return false if @placed_ships[i].include? coordinate
